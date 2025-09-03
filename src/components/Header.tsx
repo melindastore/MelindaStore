@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-pink-600 via-pink-600 to-purple-900 bg-opacity-100 text-white z-50">
+    <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-pink-600 via-pink-600 to-purple-900 bg-opacity-90 text-white z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
         {/* Logo / Nome da loja */}
         <h1 className="text-2xl font-bold tracking-wide">
