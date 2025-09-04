@@ -4,7 +4,7 @@ import { MessageCircle, Sparkles } from 'lucide-react';
 const Hero: React.FC = () => {
   const handleWhatsAppContact = () => {
     const message = encodeURIComponent('Olá! Gostaria de conhecer mais sobre suas joias.');
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    window.open(`https://wa.me/73999723147?text=${message}`, '_blank');
   };
 
   return (

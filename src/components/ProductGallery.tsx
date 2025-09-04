@@ -115,7 +115,7 @@ const ProductGallery: React.FC = () => {
     const message = encodeURIComponent(
       `Olá! Tenho interesse no produto: ${product.name} - ${product.price}. Gostaria de mais informações.`
     );
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    window.open(`https://wa.me/5573999723147?text=${message}`, '_blank');
   };
 
   return (

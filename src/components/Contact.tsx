@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
     const message = encodeURIComponent(
       `Olá! Gostaria de mais informações sobre as semi joias da Melinda Store. Meu nome é ${formData.name || '[Nome]'}.`
     );
-    window.open(`https://wa.me/5511941814844?text=${message}`, '_blank');
+    window.open(`https://wa.me/5573999723147?text=${message}`, '_blank');
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Telefone</h4>
-                    <p className="text-gray-300">(11) 99999-9999</p>
+                    <p className="text-gray-300">(73) 999723147</p>
                     <p className="text-sm text-gray-400">WhatsApp disponível</p>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">E-mail</h4>
-                    <p className="text-gray-300">contato@melindastore.com.br</p>
+                    <p className="text-gray-300">melindastore2025@gmail.com</p>
                     <p className="text-sm text-gray-400">Respondemos em até 24h</p>
                   </div>
                 </div>
@@ -142,9 +142,9 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Endereço</h4>
-                    <p className="text-gray-300">Rua das Flores, 456</p>
-                    <p className="text-gray-300">Centro - São Paulo, SP</p>
-                    <p className="text-sm text-gray-400">CEP: 01234-567</p>
+                    <p className="text-gray-300">Rua Ana pires Aguiar, 240</p>
+                    <p className="text-gray-300">Centro - Livramento, BA</p>
+                    <p className="text-sm text-gray-400">CEP: 46140-000</p>
                   </div>
                 </div>
 
@@ -170,6 +170,8 @@ const Contact: React.FC = () => {
                   <MapPin className="h-12 w-12 text-rose-500 mx-auto mb-2" />
                   <p className="text-gray-300">Mapa interativo</p>
                   <p className="text-sm text-gray-400">Clique para abrir no Google Maps</p>
+                
+
                 </div>
               </div>
             </div>

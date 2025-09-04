@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.instagram.com/storemeelinda"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rose-500 transition-all duration-300 group"
               >
                 <Instagram className="h-5 w-5 text-gray-300 group-hover:text-white" />
@@ -74,17 +74,17 @@ const Footer: React.FC = () => {
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-center space-x-3">
                 <MessageCircle className="h-5 w-5 text-yellow-600 flex-shrink-0" />
-                <span>(11) 99999-9999</span>
+                <span>(73) 999723147</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Heart className="h-5 w-5 text-yellow-600 flex-shrink-0" />
-                <span>contato@melindastore.com.br</span>
+                <span>melindastore2025@gmail.com</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Gem className="h-5 w-5 text-yellow-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p>Rua das Flores, 456</p>
-                  <p>Centro - São Paulo, SP</p>
+                  <p>Rua Ana Pires Aguiar, 240</p>
+                  <p>Centro - Livramento, BA</p>
                 </div>
               </li>
             </ul>
