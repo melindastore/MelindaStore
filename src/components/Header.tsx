@@ -6,7 +6,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
         {/* Logo / Nome da loja */}
         <h1 className="text-2xl font-bold tracking-wide">
-          Loja Melinda
+          Melinda Store
         </h1>
 
         {/* Navegação */}
@@ -20,7 +20,7 @@ export default function Header() {
           <a href="#sobre" className="hover:text-pink-300 transition">
             Sobre Nós
           </a>
-          <a href="#social" className="hover:text-pink-300 transition">
+          <a href="https://www.instagram.com/storemeelinda?igsh=MWpjcnFtZjBmOWp0bA==" className="hover:text-pink-300 transition">
             Rede Social
           </a>
         </nav>
