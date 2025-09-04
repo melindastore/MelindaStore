@@ -71,7 +71,16 @@ const ProductGallery: React.FC = () => {
       rating: 4
     },
     {
-      id: 6,
+      id: 7,
+      name: 'Colar Choker Moderno',
+      price: 'R$ 78',
+      image: 'https://tse1.explicit.bing.net/th/id/OIP.8YCwUGTqwQBXKAnYLAJ0MAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
+      category: 'colares',
+      description: 'Choker moderno folheado a ouro',
+      rating: 4
+    },
+    {
+      id: 8,
       name: 'Colar Choker Moderno',
       price: 'R$ 78',
       image: 'https://tse1.explicit.bing.net/th/id/OIP.8YCwUGTqwQBXKAnYLAJ0MAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
