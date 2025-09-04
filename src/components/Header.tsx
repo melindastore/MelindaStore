@@ -14,7 +14,7 @@ export default function Header() {
 
         {/* Menu desktop */}
         <nav className="hidden md:flex gap-6 text-sm font-medium">
-           <a href="#hero"  className="block hover:text-pink-300 transition">Inicio</a>
+          <a href="#hero"  className="block hover:text-pink-300 transition">Inicio</a>
           <a href="#products" className="block hover:text-pink-300 transition">Produtos</a>
           <a href="#contact" className="block hover:text-pink-300 transition">Contato</a>
           <a href="#testimonials" className="block hover:text-pink-300 transition">Depoimentos</a>
@@ -32,10 +32,10 @@ export default function Header() {
       {/* Menu mobile dropdown */}
       {menuOpen && (
         <div className="md:hidden bg-gradient-to-r from-pink-700 to-purple-800 p-4 space-y-4 text-center">
-          <a href="#inicio"  className="block hover:text-pink-300 transition">Home</a>
+          <a href="#hero"  className="block hover:text-pink-300 transition">Inicio</a>
           <a href="#products" className="block hover:text-pink-300 transition">Produtos</a>
-          <a href="#contato" className="block hover:text-pink-300 transition">Contato</a>
-          <a href="https://www.instagram.com/storemeelinda" className="block hover:text-pink-300 transition">Instagram</a>
+          <a href="#contact" className="block hover:text-pink-300 transition">Contato</a>
+          <a href="#testimonials" className="block hover:text-pink-300 transition">Depoimentos</a>
           
         </div>
       )}
