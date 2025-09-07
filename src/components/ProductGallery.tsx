@@ -19,7 +19,7 @@ const ProductGallery: React.FC = () => {
     {
       id: 1,
       name: 'Anel Delicado Rose Gold',
-      price: 'R$ 89',
+      price: 'R$ 89,00',
       image: 'https://tse1.explicit.bing.net/th/id/OIP.TuMK-xpdw0Pz0JGuxg1SPAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
       category: 'aneis',
       description: 'Anel delicado folheado a ouro rosé',
@@ -28,7 +28,7 @@ const ProductGallery: React.FC = () => {
     {
       id: 2,
       name: 'Colar Corrente Feminina',
-      price: 'R$ 125',
+      price: 'R$ 125,00',
       image: 'https://www.fashionbubbles.com/wp-content/uploads/2020/11/Como-montar-uma-loja-on-line-de-semijoias-no-atacado.jpg',
       category: 'colares',
       description: 'Colar corrente dourada com pingente coração',
@@ -37,7 +37,7 @@ const ProductGallery: React.FC = () => {
     {
       id: 3,
       name: 'Brincos Argola Minimalista',
-      price: 'R$ 65',
+      price: 'R$ 65,00',
       image: 'https://tse1.explicit.bing.net/th/id/OIP.qA5J6V2C11oT5oLClYCHugHaJ3?rs=1&pid=ImgDetMain&o=7&rm=3',
       category: 'brincos',
       description: 'Brincos argola pequena folheados a ouro',
@@ -46,7 +46,7 @@ const ProductGallery: React.FC = () => {
     {
       id: 4,
       name: 'Pulseira Charm Feminina',
-      price: 'R$ 95',
+      price: 'R$ 95,00',
       image: 'https://http2.mlstatic.com/D_NQ_NP_912894-MLB54762584495_032023-O.webp',
       category: 'pulseiras',
       description: 'Pulseira com charms delicados dourada',
@@ -55,7 +55,7 @@ const ProductGallery: React.FC = () => {
     {
       id: 5,
       name: 'Anel Solitário Elegante',
-      price: 'R$ 110',
+      price: 'R$ 110,00',
       image: 'https://tse3.mm.bing.net/th/id/OIP.7u128-2CmWB7fWnE19ltAAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
       category: 'aneis',
       description: 'Anel solitário com zircônia cravada',
@@ -64,7 +64,7 @@ const ProductGallery: React.FC = () => {
     {
       id: 6,
       name: 'Colar Choker Moderno',
-      price: 'R$ 78',
+      price: 'R$ 78,00',
       image: 'https://tse1.explicit.bing.net/th/id/OIP.8YCwUGTqwQBXKAnYLAJ0MAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
       category: 'colares',
       description: 'Choker moderno folheado a ouro',
@@ -73,7 +73,7 @@ const ProductGallery: React.FC = () => {
     {
       id: 7,
       name: 'Colar Choker Moderno',
-      price: 'R$ 78',
+      price: 'R$ 78,00',
       image: 'https://tse1.explicit.bing.net/th/id/OIP.8YCwUGTqwQBXKAnYLAJ0MAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
       category: 'colares',
       description: 'Choker moderno folheado a ouro',
@@ -82,7 +82,7 @@ const ProductGallery: React.FC = () => {
     {
       id: 8,
       name: 'Colar Choker Moderno',
-      price: 'R$ 78',
+      price: 'R$ 78,00',
       image: 'https://tse1.explicit.bing.net/th/id/OIP.8YCwUGTqwQBXKAnYLAJ0MAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
       category: 'colares',
       description: 'Choker moderno folheado a ouro',
