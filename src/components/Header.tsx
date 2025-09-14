@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // ícones
-import logo from '../assets/logo.png';
+import logo from '../assets/logoMelin2.png';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-pink-700 via-pink-650 to-purple-700 bg-opacity-90 text-white z-50">
-      <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <div className="max-w-6xl mx-auto flex justify-between items-center p-1">
         {/* Logo */}
-        <img src={logo} alt="Logo Melinda Store" className="w-12 h-12 rounded-full object-cover bg-gradient-to-r from-pink-700 to-purple-700 p-1" 
+        <img src={logo} alt="Logo Melinda Store" className="w-20 h- 20 object-contain  m-0 p-0" 
   />
         <h1 className="text-2xl font-bold tracking-wide">
             Melinda Store
