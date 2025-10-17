@@ -142,7 +142,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Endereço</h4>
-                    <p className="text-gray-300">Rua Ana pires Aguiar, 240</p>
+                    {/* <p className="text-gray-300">Rua Ana pires Aguiar, 240</p> */}
                     <p className="text-gray-300">Centro - Livramento, BA</p>
                     <p className="text-sm text-gray-400">CEP: 46140-000</p>
                   </div>

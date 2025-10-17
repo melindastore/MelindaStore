@@ -25,6 +25,7 @@ const ProductGallery: React.FC = () => {
             : `https://backendmelinda.onrender.com/produtos/${selectedCategory}`;
         const res = await fetch(url);
         const data = await res.json();
+        console.log("Produtos recebidos:", data);
         setProducts(data);
       } catch (err) {
         console.error(err);
@@ -40,7 +41,8 @@ const ProductGallery: React.FC = () => {
     { id: 'aneis', name: 'Anéis' },
     { id: 'colares', name: 'Colares' },
     { id: 'brincos', name: 'Brincos' },
-    { id: 'pulseiras', name: 'Pulseiras' }
+    { id: 'pulseiras', name: 'Pulseiras' },
+     { id: 'conjunto', name: 'Conjunto' }
   ];
 
   const toggleFavorite = (id: number) => {

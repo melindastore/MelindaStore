@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// import { BrowserRouter as Router } from "react-router-dom";
+
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ProductGallery from './components/ProductGallery';
@@ -9,22 +11,20 @@ import AdminProducts from './components/AdminProducts';
 import AdminLogin from './components/AdminLogin';
 
 function App() {
-  // guarda o token do admin
   const [token, setToken] = useState(localStorage.getItem("adminToken") || "");
+  const [showLogin, setShowLogin] = useState(false); // 👈 controla exibição
 
-  // função passada para o login
   const handleLogin = (jwt: string) => {
     localStorage.setItem("adminToken", jwt);
     setToken(jwt);
+    setShowLogin(false); // fecha login depois que logar
   };
 
-  // logout do admin
   const handleLogout = () => {
     localStorage.removeItem("adminToken");
     setToken("");
   };
 
-  // se estiver logado como admin, mostra o painel admin
   if (token) {
     return (
       <div className="min-h-screen bg-gray-100">
@@ -42,7 +42,6 @@ function App() {
     );
   }
 
-  // se não estiver logado, mostra o site normal e login do admin
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -50,8 +49,21 @@ function App() {
       <ProductGallery />
       <Testimonials />
       <Contact />
-      <Footer />
-      <AdminLogin onLogin={handleLogin} />
+      <Footer onAdminClick={() => setShowLogin(true)} /> {/* 👈 passa função pro footer */}
+
+      {showLogin && ( // 👈 só renderiza se clicar no link
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded shadow-lg w-full max-w-sm">
+            <button
+              onClick={() => setShowLogin(false)}
+              className="absolute top-2 right-2 text-gray-600 hover:text-black"
+            >
+              ✕
+            </button>
+            <AdminLogin onLogin={handleLogin} />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

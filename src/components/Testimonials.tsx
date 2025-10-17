@@ -22,7 +22,7 @@ const Testimonials: React.FC = () => {
     },
     {
       id: 2,
-      name: 'Mariana Santos',
+      name: 'Sabrina Santos',
       rating: 5,
       comment: 'Comprei um colar para minha formatura e ficou perfeito! As semi joias da Melinda são lindas e com preço justo. Super recomendo!',
       date: '2024-12-10',
@@ -42,6 +42,14 @@ const Testimonials: React.FC = () => {
       rating: 5,
       comment: 'Atendimento maravilhoso! Me ajudaram a escolher as semi joias perfeitas para presentear minha irmã. Ela amou cada peça!',
       date: '2024-12-05',
+      verified: true
+    },
+    {
+      id: 5,
+      name: 'Karina Bastos',
+      rating: 6,
+      comment: 'Tô Amando meus Brincos!',
+      date: '2025-06-08',
       verified: true
     }
   ]);

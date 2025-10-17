@@ -9,9 +9,9 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-pink-700 via-pink-650 to-purple-700 bg-opacity-90 text-white z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-1">
         {/* Logo */}
-        <img src={logo} alt="Logo Melinda Store" className="w-20 h- 20 object-contain  m-0 p-0" 
+        <img src={logo} alt="Logo Melinda Store" className="w-20 h-20 object-contain  m-0 p-0" 
   />
-        <h1 className="text-2xl font-bold tracking-wide">
+        <h1 className="font-playfair text-3xl font-bold tracking-wider">
             Melinda Store
         </h1>
 

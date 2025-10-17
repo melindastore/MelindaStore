@@ -1,7 +1,8 @@
 import React from 'react';
 import { Gem, Instagram, Facebook, MessageCircle, Heart } from 'lucide-react';
+import { Link } from "react-router-dom";
 
-const Footer: React.FC = () => {
+const Footer: React.FC<{ onAdminClick: () => void }> = ({ onAdminClick }) => {
   const currentYear = new Date().getFullYear();
 
   const handleWhatsAppContact = () => {
@@ -83,7 +84,6 @@ const Footer: React.FC = () => {
               <li className="flex items-start space-x-3">
                 <Gem className="h-5 w-5 text-yellow-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p>Rua Ana Pires Aguiar, 240</p>
                   <p>Centro - Livramento, BA</p>
                 </div>
               </li>
@@ -97,6 +97,14 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 text-sm">
               © {currentYear} Melinda Store. Todos os direitos reservados.
             </p>
+            <button
+  onClick={onAdminClick}
+  className="text-gray-400 hover:text-gray-200"
+>
+  Administração
+</button>
+
+
             
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <button
