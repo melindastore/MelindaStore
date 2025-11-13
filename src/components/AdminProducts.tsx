@@ -137,28 +137,28 @@ export default function AdminProducts() {
 
   // ===== COMENTÁRIOS =====
   const fetchComentarios = async () => {
-  try {
-    const res = await fetch("https://backendmelinda.onrender.com/admin/testimonials", {
-  headers: { Authorization: `Bearer ${token}` },
-});
+    try {
+      const res = await fetch("https://backendmelinda.onrender.com/admin/testimonials", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
 
-    const data = await res.json();
-    // 🔥 Garante que sempre vira array
-    setComentarios(Array.isArray(data) ? data : data.data || []);
-  } catch (err) {
-    console.error(err);
-    setComentarios([]);
-  } finally {
-    setLoading(false);
-  }
-};
+      const data = await res.json();
+      // 🔥 Garante que sempre vira array
+      setComentarios(Array.isArray(data) ? data : data.data || []);
+    } catch (err) {
+      console.error(err);
+      setComentarios([]);
+    } finally {
+      setLoading(false);
+    }
+  };
 
 
   const handleAprovar = async (id: number) => {
     const res = await fetch(`https://backendmelinda.onrender.com/testimonials/${id}/verify`, {
-  method: "PUT",
-  headers: { Authorization: `Bearer ${token}` },
-});
+      method: "PUT",
+      headers: { Authorization: `Bearer ${token}` },
+    });
 
     if (res.ok) {
       setMensagem("Comentário aprovado!");
@@ -168,9 +168,9 @@ export default function AdminProducts() {
 
   const handleExcluirComentario = async (id: number) => {
     const res = await fetch(`https://backendmelinda.onrender.com/testimonials/${id}`, {
-  method: "DELETE",
-  headers: { Authorization: `Bearer ${token}` },
-});
+      method: "DELETE",
+      headers: { Authorization: `Bearer ${token}` },
+    });
 
     if (res.ok) {
       setMensagem("Comentário excluído!");
