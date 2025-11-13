@@ -138,9 +138,10 @@ export default function AdminProducts() {
   // ===== COMENTÁRIOS =====
   const fetchComentarios = async () => {
   try {
-    const res = await fetch("https://backendmelinda.onrender.com/comentarios/pendentes", {
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const res = await fetch("https://backendmelinda.onrender.com/admin/testimonials", {
+  headers: { Authorization: `Bearer ${token}` },
+});
+
     const data = await res.json();
     // 🔥 Garante que sempre vira array
     setComentarios(Array.isArray(data) ? data : data.data || []);
@@ -154,10 +155,11 @@ export default function AdminProducts() {
 
 
   const handleAprovar = async (id: number) => {
-    const res = await fetch(`https://backendmelinda.onrender.com/comentarios/${id}/aprovar`, {
-      method: "PUT",
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const res = await fetch(`https://backendmelinda.onrender.com/testimonials/${id}/verify`, {
+  method: "PUT",
+  headers: { Authorization: `Bearer ${token}` },
+});
+
     if (res.ok) {
       setMensagem("Comentário aprovado!");
       fetchComentarios();
@@ -165,10 +167,11 @@ export default function AdminProducts() {
   };
 
   const handleExcluirComentario = async (id: number) => {
-    const res = await fetch(`https://backendmelinda.onrender.com/comentarios/${id}`, {
-      method: "DELETE",
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const res = await fetch(`https://backendmelinda.onrender.com/testimonials/${id}`, {
+  method: "DELETE",
+  headers: { Authorization: `Bearer ${token}` },
+});
+
     if (res.ok) {
       setMensagem("Comentário excluído!");
       fetchComentarios();
