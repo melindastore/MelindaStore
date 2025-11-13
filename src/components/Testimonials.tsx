@@ -10,7 +10,7 @@ interface Testimonial {
   verified: boolean;
 }
 
-const API_BASE = "https://seu-servidor.onrender.com"; // 🔧 ajuste para sua URL real
+const API_BASE = "https://backendmelinda.onrender.com"; // 🔧 ajuste para sua URL real
 
 const Testimonials: React.FC = () => {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
