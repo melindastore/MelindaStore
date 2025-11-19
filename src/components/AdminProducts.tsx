@@ -57,21 +57,31 @@ export default function AdminProducts() {
 
   // ===== PRODUTOS =====
   const fetchProducts = async () => {
-    try {
-      const res = await fetch("https://backendmelinda.onrender.com/produtos");
-      const data = await res.json();
-      setProdutos(data);
-    } catch (err) {
-      console.error(err);
-    } finally {
-      setLoading(false);
-    }
-  };
+  try {
+    const res = await fetch("https://backendmelinda.onrender.com/produtos");
+    let data = await res.json();
+
+    // Ordenar por ID desc (novos primeiro)
+    data = data.sort((a: Product, b: Product) => b.id - a.id);
+
+    setProdutos(data);
+  } catch (err) {
+    console.error(err);
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   useEffect(() => {
     if (modo === "produtos") fetchProducts();
     else fetchComentarios();
   }, [modo]);
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, [modo, produtos]);
+
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0] || null;
